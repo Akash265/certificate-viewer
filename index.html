@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <button class="back-btn" onclick="history.back()">←</button>
+            <span class="header-title">Download Certificate</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="certificate-header">
+            <h1>Certificate of Participation</h1>
+        </div>
+
+        <div class="certificate-container">
+            <img 
+                src="certificates/certificate.jpg" 
+                alt="Certificate of Participation" 
+                class="certificate-image" 
+                id="certificateImage"
+                onclick="openModal()"
+            >
+        </div>
+
+        <div class="action-buttons">
+            <button class="btn btn-primary" onclick="downloadImage()">
+                📸 Download Image
+            </button>
+            <button class="btn btn-secondary" onclick="downloadPDF()">
+                📄 Download Pdf
+            </button>
+            <button class="btn btn-primary" onclick="downloadStory()">
+                📖 Download Story
+            </button>
+        </div>
+
+        <div class="linkedin-section">
+            <button class="btn linkedin-btn" onclick="addToLinkedIn()">
+                Add to LinkedIn profile
+            </button>
+        </div>
+
+        <div class="share-section">
+            <h3 class="share-title">Share it on:</h3>
+            <div class="share-buttons">
+                <button class="share-btn twitter" onclick="shareOnTwitter()">𝕏</button>
+                <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">💬</button>
+                <button class="share-btn linkedin" onclick="shareOnLinkedIn()">in</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for full-size image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
