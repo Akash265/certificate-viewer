@@ -1,8 +1,8 @@
 // Configuration - Update these values for each certificate
 const certificateConfig = {
-    imagePath: 'certificates/certificate.jpg',    // Path to your certificate image
-    pdfPath: 'certificates/certificate.pdf',      // Path to your certificate PDF
-    storyPath: 'certificates/story.txt',          // Path to your story file
+    imagePath: 'Certificate.jpg',    // Path to your certificate image
+    pdfPath: 'Certificate.pdf',      // Path to your certificate PDF
+    storyPath: 'Certificate.txt',          // Path to your story file
     recipientName: 'Certificate Holder',          // Default recipient name
     program: 'Certificate Program',               // Program name
     organization: 'Organization Name'             // Organization name
